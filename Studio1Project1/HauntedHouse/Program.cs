@@ -175,8 +175,7 @@ namespace HauntedHouse
                             }
                             else if (!menu)
                             {
-                                text = "Can't use that command here";
-                                ShowMessage();
+                                ShowMessage("Can't use that command here");
                             }
                         }
                         break;
@@ -219,14 +218,12 @@ namespace HauntedHouse
                                 int counter = 0;
                                 if (item.Item2 > 0)
                                 {
-                                    text = item.Item1 + " " + item.Item3;
-                                    ShowMessage();
+                                    ShowMessage(item.Item1 + " " + item.Item3);
                                     counter++;
                                 }
                                 if (counter == 0)
                                 {
-                                    text = "You are carrying nothing... I mean nothing at all, not even lint or a loose string.";
-                                    ShowMessage();
+                                    ShowMessage("You are carrying nothing... I mean nothing at all, not even lint or a loose string.");
                                 }
 
                             }
@@ -241,8 +238,7 @@ namespace HauntedHouse
 
                     default: //if nothing else
                         {
-                            text = "I didn't understand that";
-                            ShowMessage();
+                            ShowMessage("I didn't understand that");
                         }
                         break;
                 }
@@ -516,49 +512,42 @@ namespace HauntedHouse
                 {
                     case "look":
                         {
-                            text = "Use to look at certain objects. For example 'look chest'.";
-                            ShowMessage();
+                            ShowMessage("Use to look at certain objects. For example 'look chest'.");
                         }
                         break;
 
                     case "use":
                         {
-                            text = "Use an item in your inventory with an object around the room. For example 'use key on door'.";
-                            ShowMessage();
+                            ShowMessage("Use an item in your inventory with an object around the room. For example 'use key on door'.");
                         }
                         break;
 
                     case "go":
                         {
-                            text = "Use to go in a direction. For example 'go west'";
-                            ShowMessage();
+                            ShowMessage("Use to go in a direction. For example 'go west'");
                         }
                         break;
 
                     case "open":
                         {
-                            text = "Use to open something. For example 'open chest'";
-                            ShowMessage();
+                            ShowMessage("Use to open something. For example 'open chest'");
                         }
                         break;
 
                     case "take":
                         {
-                            text = "Use to take an item. for example 'take key'";
-                            ShowMessage();
+                            ShowMessage("Use to take an item. for example 'take key'");
                         }
                         break;
                     case "move":
                         {
-                            text = "Use to move an item. for example 'move box'";
-                            ShowMessage();
+                            ShowMessage("Use to move an item. for example 'move box'");
                         }
                         break;
 
                     default:
                         {
-                            text = "No information about '" + playerTexts[1] + "'.";
-                            ShowMessage();
+                            ShowMessage("No information about '" + playerTexts[1] + "'.");
                         }
                         break;
 
@@ -566,10 +555,8 @@ namespace HauntedHouse
             }
             else
             {
-                text = "Current commands you can use: look, go, use, move, take, open, read, help, main, save, load, exit.";
-                ShowMessage();
-                text = "Type 'help [command]' for more information";
-                ShowMessage();
+                ShowMessage("Current commands you can use: look, go, use, move, take, open, read, help, main, save, load, exit.");
+                ShowMessage("Type 'help [command]' for more information");
             }
         }
 
@@ -584,14 +571,12 @@ namespace HauntedHouse
                 if (objectResult != null)
                 {
                     //outputs the description string onto the screen
-                    text = objectResult.Item6;
-                    ShowMessage();
+                    ShowMessage(objectResult.Item6);
                 }
                 else //if can't find the object in question
                 {
                     //let the player know the object didn't exist
-                    text = "I didn't understand after " + playerTexts[0];
-                    ShowMessage();
+                    ShowMessage("I didn't understand after " + playerTexts[0]);
                 }
             }
             else //if nothing after look, output the room description
@@ -622,26 +607,22 @@ namespace HauntedHouse
                         }
                         else //if they are not allowed, show the message on why they can't
                         {
-                            text = direction.Item4;
-                            ShowMessage();
+                            ShowMessage(direction.Item4);
                         }
                     }
                     else //if blank, use the default message
                     {
-                        text = "You can not go that direction.";
-                        ShowMessage();
+                        ShowMessage("You can not go that direction.");
                     }
                 }
                 else
                 {
-                    text = "I didn't understand after " + playerTexts[0];
-                    ShowMessage();
+                    ShowMessage("I didn't understand after " + playerTexts[0]);
                 }
             }
             else //if theres nothing after 'go', tell the player the message
             {
-                text = "Go where?";
-                ShowMessage();
+                ShowMessage("Go where?");
             }
         }
 
@@ -673,51 +654,43 @@ namespace HauntedHouse
                                     {
                                         score += 20;
                                         //show the message of success and create the list to change the status from false to true;
-                                        text = objectResult.Item3;
-                                        ShowMessage();
+                                        ShowMessage(objectResult.Item3);
                                         objects.Add(Tuple.Create(objectResult.Item1, true, objectResult.Item3, objectResult.Item4, objectResult.Item5, objectResult.Item6));
                                         objects.Remove(objectResult);
                                     }
                                     else //if the object is already activated, tell the user that it has
                                     {
-                                        text = objectResult.Item4;
-                                        ShowMessage();
+                                        ShowMessage(objectResult.Item4);
                                     }
                                 }
                                 else // if the object didn't match the item, then message the player
                                 {
-                                    text = "It wasn't intended to be used like that.";
-                                    ShowMessage();
+                                    ShowMessage("It wasn't intended to be used like that.");
                                 }
                             }
                             else //if didn't match the object, give the message
                             {
-                                text = "I didn't understand after " + playerTexts[0] + " " + playerTexts[1];
-                                ShowMessage();
+                                ShowMessage("I didn't understand after " + playerTexts[0] + " " + playerTexts[1]);
                             }
                         }
                         else // if th eplayer didn't type anything after the item, give the message
                         {
-                            text = "use " + itemResult.Item1 + " on what?";
-                            ShowMessage();
+                            ShowMessage("use " + itemResult.Item1 + " on what?");
                         }
                     }
                     else //if the player doesn't have the item. give the message
                     {
-                        text = "You do not have that item";
-                        ShowMessage();
+                        ShowMessage("You do not have that item");
                     }
                 }
                 else
                 {
-                    text = "I didn't understand after " + playerTexts[0];
-                    ShowMessage();
+                    ShowMessage("I didn't understand after " + playerTexts[0]);
                 }
             }
             else // if couldn't match the item name. message
             {
-                text = "Use what?";
-                ShowMessage();
+                ShowMessage("Use what?");
             }
         }
 
@@ -739,8 +712,7 @@ namespace HauntedHouse
                         {
                             //tell the player the success message and change the status from false to true
                             score += 10;
-                            text = objectResult.Item3;
-                            ShowMessage();
+                            ShowMessage(objectResult.Item3);
                             objects.Add(Tuple.Create(objectResult.Item1, true, objectResult.Item3, objectResult.Item4, objectResult.Item5, objectResult.Item6));
                             objects.Remove(objectResult);
                             if (objectResult.Item1 == "Room2jewelrybox")
@@ -757,26 +729,22 @@ namespace HauntedHouse
                         }
                         else //if already activated, message
                         {
-                            text = objectResult.Item4;
-                            ShowMessage();
+                            ShowMessage(objectResult.Item4);
                         }
                     }
                     else //if the object can't be operated in that manner. message
                     {
-                        text = "You can't " + playerTexts[0] + " that";
-                        ShowMessage();
+                        ShowMessage("You can't " + playerTexts[0] + " that");
                     }
                 }
                 else //if the object didn't exist. message
                 {
-                    text = "I didn't understand after " + playerTexts[0];
-                    ShowMessage();
+                    ShowMessage("I didn't understand after " + playerTexts[0]);
                 }
             }
             else //if th eplayer didn't write anything after 'open'.
             {
-                text = playerTexts[0] + " what?";
-                ShowMessage();
+                ShowMessage(playerTexts[0] + " what?");
             }
         }
 
@@ -858,7 +826,7 @@ namespace HauntedHouse
         }
 
         //shows the player the message and saves it
-        public static void ShowMessage()
+        public static void ShowMessage(string text)
         {
             int maxWidth = Console.WindowWidth - (Console.WindowWidth / 4); //the maximum width allowed
             string[] texts = text.Split(" "); //split the string into each word
@@ -1029,13 +997,12 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[0])
             {
-                text = "You awaken in a dark room you do not recognize. " +
+                ShowMessage( "You awaken in a dark room you do not recognize. " +
                         "You are cold and lying on the wooden floorboards in the center of the room. " +
                         "Through the window, moonlight illuminates the few objects in the room. " +
                         "An old chest lies in the corner under a thick layer of dust. " +
                         "It is as if the house has not been lived in in many years. " +
-                        "There is a door to the west.";
-                ShowMessage();
+                        "There is a door to the west.");
                 roomDescription[0] = false;
             }
         }
@@ -1137,10 +1104,9 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[1])
             {
-                text = "You step through the door and find yourself in an old bedroom. Thick dust is everywhere, like the first room, it has been untouched for years. " +
+                ShowMessage("You step through the door and find yourself in an old bedroom. Thick dust is everywhere, like the first room, it has been untouched for years. " +
                     "Mold is eating away at the bed spread. The curtains hang in strips letting in a little moonlight. A broken mirror above an old duchess reflects a full moon. " +
-                    "You hear strange music coming from the jewelry box upon the duchess. The door you entered from is to the east and another door is to the west. ";
-                ShowMessage();
+                    "You hear strange music coming from the jewelry box upon the duchess. The door you entered from is to the east and another door is to the west. ");
                 roomDescription[1] = false;
                 roomDescription[2] = true;
             }
@@ -1204,14 +1170,13 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[2])
             {
-                text = "You enter the hallway; you are on the " +
+                ShowMessage("You enter the hallway; you are on the " +
                     "top floor of what looks like a two story " +
                     "house long abandoned by previous tenants." +
                     " Faded portraits from the Victorian era line " +
                     "the walls. You see another room at the north end of " +
                     "the hallway, the door is hanging off the hinges. " +
-                    "To the west, stairs lead down to the ground floor.";
-                ShowMessage();
+                    "To the west, stairs lead down to the ground floor.");
                 roomDescription[2] = false;
                 roomDescription[1] = true;
             }
@@ -1293,15 +1258,14 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[3])
             {
-                text = "You walk down slowly, some of these stairs look like they " +
+                ShowMessage("You walk down slowly, some of these stairs look like they " +
                     "won’t hold your weight, as you near the bottom, footsteps sound" +
                     " at the top. You turn around, no one is there. Is it your imagination?" +
                     " The stairs feel like they are never ending despite there only being 15" +
                     " or so. You finally reach the bottom. By this time, you have broken out in" +
                     " a cold sweat, every step you took, another followed, only shadows were" +
                     " there when you looked back. You are facing the front door; the kitchen lies to" +
-                    " the east, a drawing room to the west. A rack beside the bottom of the stairs holds a moth eaten fur coat";
-                ShowMessage();
+                    " the east, a drawing room to the west. A rack beside the bottom of the stairs holds a moth eaten fur coat");
                 roomDescription[3] = false;
                 roomDescription[2] = true;
                 roomDescription[4] = true;
@@ -1350,8 +1314,7 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[4])
             {
-                text = "More rats. A door that looks like it might lead to the backyard is across the room";
-                ShowMessage();
+                ShowMessage("More rats. A door that looks like it might lead to the backyard is across the room");
                 roomDescription[3] = true;
                 roomDescription[4] = false;
             }
@@ -1395,12 +1358,11 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[5])
             {
-                text = "A couch and two chairs surround a mahogany table with intricately " +
+                ShowMessage("A couch and two chairs surround a mahogany table with intricately " +
                     "carved with legs displaying flowers and vines. This lounge set would fetch " +
                     "thousands in an antique’s auction, if only it had been properly stored. Mold " +
                     "has eaten into what once must have been plush red velvet. On the coffee table " +
-                    "lies a candle holder with a fresh candle. No other rooms lead off this room.";
-                ShowMessage();
+                    "lies a candle holder with a fresh candle. No other rooms lead off this room.");
                 roomDescription[3] = true;
                 roomDescription[5] = false;
             }
@@ -1454,8 +1416,7 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[6])
             {
-                text = "As you descend the stairs you are engulfed in darkness. To continue further could prove dangerous";
-                ShowMessage();
+                ShowMessage("As you descend the stairs you are engulfed in darkness. To continue further could prove dangerous");
                 roomDescription[3] = true;
                 roomDescription[6] = false;
                 roomDescription[7] = true;
@@ -1537,7 +1498,7 @@ namespace HauntedHouse
             //Room description
             if (roomDescription[7])
             {
-                text = "You make it down the stairs without falling; if " +
+                ShowMessage("You make it down the stairs without falling; if " +
                     "it weren’t for the candle you likely would have " +
                     "broken your back. An old armchair sits in one of the " +
                     "corners piled high with porcelain dolls with cracked " +
@@ -1545,8 +1506,7 @@ namespace HauntedHouse
                     "a round cement well in the center of the room. A small " +
                     "stone sits beside the well. In another corner there is a " +
                     "painting of what was once a beautiful young woman, she appears sad in the painting. " +
-                    "To the east, there is a bookcase.";
-                ShowMessage();
+                    "To the east, there is a bookcase.");
                 roomDescription[6] = true;
                 roomDescription[7] = false;
             }
@@ -1555,8 +1515,7 @@ namespace HauntedHouse
         //If player uses room7 stairs without candle
         public static void Room99()
         {
-            text = "Death by stairs!";
-            ShowMessage();
+            ShowMessage("Death by stairs!");
         }
 
         //tunnel main
@@ -1587,8 +1546,7 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[8])
             {
-                text = "You can only go east or west";
-                ShowMessage();
+                ShowMessage("You can only go east or west");
                 roomDescription[8] = false;
             }
         }
@@ -1621,8 +1579,7 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[9])
             {
-                text = "west tunnel";
-                ShowMessage();
+                ShowMessage("west tunnel");
                 roomDescription[9] = false;
             }
 
@@ -1658,8 +1615,7 @@ namespace HauntedHouse
             //description of the room
             if (roomDescription[10])
             {
-                text = "east tunnel";
-                ShowMessage();
+                ShowMessage("east tunnel");
                 roomDescription[10] = false;
             }
 
@@ -1702,12 +1658,11 @@ namespace HauntedHouse
 
             if (roomDescription[11])
             {
-                text = "You come to a room and can see the base of the well in the center, " +
+                ShowMessage("You come to a room and can see the base of the well in the center, " +
                     "an ethereal barely visible wispy shape forms in front of you. " +
                     "The longer you look the further the details of the shape develop. " +
                     "You find yourself face to face with the beautiful young woman from the portrait. " +
-                    "You gasp at her beauty and the sadness in her eyes.";
-                ShowMessage();
+                    "You gasp at her beauty and the sadness in her eyes.");
                 roomDescription[11] = false;
             }
         }
@@ -1730,54 +1685,44 @@ namespace HauntedHouse
 
         public static void Ending()
         {
-            text = "“My name is Rose Abigail Black; thank you for finding me. " +
+            EditEndingText("“My name is Rose Abigail Black; thank you for finding me. " +
                 "I have waited so long. " +
                 "Almost 200 years ago this was my home, I was happy… " +
                 "My father said it was time I was married and that he had arranged for it to be so with the " +
                 "son of another affluent family in town. " +
-                "His name was Henry H. Holmes, he was so handsome. I was thrilled with the match… ";
+                "His name was Henry H. Holmes, he was so handsome. I was thrilled with the match… ");
 
-            EditEndingText();
-
-            text = "Then it all started to go wrong, " +
+            EditEndingText("Then it all started to go wrong, " +
                 "behind his keen intellect and charming personality lay the soul of a monster. " +
                 "He treated me most violently, " +
                 "I was desperate to get away before the marriage took place and before being taken from my home and left in his care. " +
                 "I went to my father, I showed him the marks left upon my pale skin from his latest attentions. " +
                 "At once, my father called him to the house and declared that the marriage would no longer take place. " +
                 "Henry was furious, he stormed from the house. " +
-                "I breathed a sigh of relief, believing myself finally safe. ";
+                "I breathed a sigh of relief, believing myself finally safe. ");
 
-            EditEndingText();
-
-            text = "That night he returned. " +
+            EditEndingText("That night he returned. " +
                 "With a knife taken from the kitchen he bounded up the stairs to my parent’s bedroom and brutally murdered them. " +
                 "Next, he entered my room, bound my wrists, stabbed me once in the stomach and dragged me down the stairs. " +
-                "Even the maids in the drawing room were not spared as they were found hiding from the commotion behind the couch. ";
+                "Even the maids in the drawing room were not spared as they were found hiding from the commotion behind the couch. ");
 
-            EditEndingText();
-
-            text = "I was dragged down more stairs to the basement. " +
+            EditEndingText("I was dragged down more stairs to the basement. " +
                 "He snatched the locket from my neck and threw me down the old well in which the house had been built over. " +
                 "He locked me inside. There I splashed and screamed until the loss of blood finally drained away my life force. " +
-                "Here I have waited for someone to find me. ";
+                "Here I have waited for someone to find me. ");
 
-            EditEndingText();
-
-            text = "Henry haunts the upper levels of this house, his soul not pure enough to pass on, " +
+            EditEndingText("Henry haunts the upper levels of this house, his soul not pure enough to pass on, " +
                 "his only joy is knowing I am trapped here with him. " +
                 "I have waited for someone to hear my story and return to me my most precious possession, " +
                 "the amulet given to me at birth by my father, he said it would protect me. " +
-                "Only by wearing it again can I leave this place.";
-
-            EditEndingText();
+                "Only by wearing it again can I leave this place.");
 
             ShowEnding();
             menu = true;
         }
 
 
-        public static void EditEndingText()
+        public static void EditEndingText(string text)
         {
             int maxWidth = Console.WindowWidth; //the maximum width allowed
             string[] texts = text.Split(" "); //split the string into each word
