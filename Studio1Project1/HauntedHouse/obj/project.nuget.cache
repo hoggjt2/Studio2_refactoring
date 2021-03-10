@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "2O3kYrXx40OJio+yz9+ZKqVO2oY5KCmeY5svg+3N9VNoDO2M9KczpgPlU0+0wU5tW4AoS9zl/6XCPshCrNYDDg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\robinja4\\OneDrive - Otago Polytechnic\\Y1S2\\Studio 2\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\robinja4\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\robinja4\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\robinja4\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\robinja4\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
