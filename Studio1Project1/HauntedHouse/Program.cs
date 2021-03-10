@@ -37,6 +37,7 @@ namespace HauntedHouse
         private const int RESTORE = 9;
         private const int ANIDELAY = 500;
         private const int MAZECOUNT5 = 5;
+        private const int UNKNOWNTUNNEL = 12;
 
 
         //Constants
@@ -71,7 +72,7 @@ namespace HauntedHouse
             Stairs,
             Basement,
             Tunnel,
-            Unknown = 12
+            Unknown = UNKNOWNTUNNEL
         }
 
         //Main method
