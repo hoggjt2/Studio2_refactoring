@@ -5,7 +5,7 @@
  * Language:                C#
  * Platform:                Microsoft Visual Studio 2019
  * Purpose:                 To work in a team environment by making a text based adventure game.
- * Description:             Explore a haunted house using text commands ...
+ * Description:             Player uses text commands to explore a haunted house and discover its secrets.
  *
  * known bugs:              
  * Additional features:     
@@ -489,14 +489,14 @@ namespace HauntedHouse
                                                    sr.ReadLine()));
                 }
 
-                //Same as above but for RoomDescription
+                //Same as above but for roomDescription
                 count = Convert.ToInt16(sr.ReadLine());
                 for (int i = 0; i < count; i++)
                 {
                     roomDescription.Add(Convert.ToBoolean(sr.ReadLine()));
                 }
 
-                //same as above but for screensave
+                //same as above but for screenSave
                 count = Convert.ToInt16(sr.ReadLine());
                 for (int i = 0; i < count; i++)
                 {
@@ -510,7 +510,7 @@ namespace HauntedHouse
         //To give the player any help with commands
         static public void Help(string[] playerTexts)
         {
-            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if theres more words after the first one and isnt blank
+            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if there's more words after the first one and isn't blank
             {
                 switch (playerTexts[1])
                 {
@@ -576,7 +576,7 @@ namespace HauntedHouse
         //Let the player look at something
         static public void Look(string[] playerTexts)
         {
-            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if theres more words after look and isn't blank
+            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if there's more words after look and isn't blank
             {
                 //gets the list of what the object is
                 var objectResult = objects.Find(x => x.Item1.Contains(playerLocation + playerTexts[1]));
@@ -648,7 +648,7 @@ namespace HauntedHouse
         //let a player use an item onto an object
         static public void Use(string[] playerTexts)
         {
-            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if theres more words after item and isn't blank
+            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if there's more words after item and isn't blank
             {
                 //gets the list of what the item is
                 var itemResult = inventory.Find(x => x.Item1.Contains(playerTexts[1]));
@@ -696,13 +696,13 @@ namespace HauntedHouse
                                 ShowMessage();
                             }
                         }
-                        else // if th eplayer didn't type anything after the item, give the message
+                        else // if the player didn't type anything after the item, give the message
                         {
                             text = "use " + itemResult.Item1 + " on what?";
                             ShowMessage();
                         }
                     }
-                    else //if the player doesn't have the item. give the message
+                    else //if the player doesn't have the item, give the message
                     {
                         text = "You do not have that item";
                         ShowMessage();
@@ -714,7 +714,7 @@ namespace HauntedHouse
                     ShowMessage();
                 }
             }
-            else // if couldn't match the item name. message
+            else // if couldn't match the item name, message
             {
                 text = "Use what?";
                 ShowMessage();
@@ -724,7 +724,7 @@ namespace HauntedHouse
         //let the player open something
         static public void ObjectInteraction(string[] playerTexts)
         {
-            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if theres more words after open and isn't blank
+            if ((playerTexts.Length > 1) && (playerTexts[1] != "")) //if there's more words after open and isn't blank
             {
                 //gets the list of what the object is
                 var objectResult = objects.Find(x => x.Item1.Contains(playerLocation + playerTexts[1]));
@@ -761,19 +761,19 @@ namespace HauntedHouse
                             ShowMessage();
                         }
                     }
-                    else //if the object can't be operated in that manner. message
+                    else //if the object can't be operated in that manner, message
                     {
                         text = "You can't " + playerTexts[0] + " that";
                         ShowMessage();
                     }
                 }
-                else //if the object didn't exist. message
+                else //if the object didn't exist, message
                 {
                     text = "I didn't understand after " + playerTexts[0];
                     ShowMessage();
                 }
             }
-            else //if th eplayer didn't write anything after 'open'.
+            else //if the player didn't write anything after 'open'.
             {
                 text = playerTexts[0] + " what?";
                 ShowMessage();
@@ -834,7 +834,7 @@ namespace HauntedHouse
         {
 
             //declare all the inventory here.
-            inventory.Add(Tuple.Create("key", 0, "It's a shiny key.... only joking, its rusted beyond believe but still works.")); //Room1 key to unlock the door in Room1.
+            inventory.Add(Tuple.Create("key", 0, "It's a shiny key.... only joking, it's rusted beyond belief but still works.")); //Room1 key to unlock the door in Room1.
             inventory.Add(Tuple.Create("amulet", 0, "The amulet is antique gold with large cracked emerald in the center.")); //Room1 key to unlock the door in Room1.
             inventory.Add(Tuple.Create("paper", 0, "Folded up paper under the amulet...what could be on it?")); //Room1 key to unlock the door in Room1.
             inventory.Add(Tuple.Create("candle", 0, "A burning candle."));//Room6 candle for Room4 stairs
@@ -878,7 +878,7 @@ namespace HauntedHouse
                     text = " " + texts[i] + " ";
                 }
             }
-            //at the end, output what ever is left.
+            //at the end, output whatever is left.
             screenSave.Add(text);
             Console.SetCursorPosition(0, 2);
             string hr = "";
@@ -1003,7 +1003,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room1north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room1south",
                                                false,
                                                "",
@@ -1059,9 +1059,9 @@ namespace HauntedHouse
                 objects.Add(Tuple.Create("Room2bed", //Name of object
                                          false,        //State of the object
                                          "Old bed", //text when first activate
-                                         "no, THERE IS MOULD!", //text when activating the second time.
+                                         "no, THERE IS MOLD!", //text when activating the second time.
                                          "lay", //What verb need to use it, (Might be able to have multiple uses, i.e. "open, move")  
-                                         "You don’t want to lie on this bed, there is mould everywhere"));//text describing what it is when the "player" looks at it  
+                                         "You don’t want to lie on this bed, there is mold everywhere"));//text describing what it is when the "player" looks at it  
             }
             if (!objects.Any(c => c.Item1.Contains("Room2duchess")))
             {
@@ -1098,11 +1098,11 @@ namespace HauntedHouse
             {
                 objects.Add(Tuple.Create("Room2paper",
                                          false,
-                                         "Touch at your own risk… When worn this amulet allows the wearer to see those on the ‘other side’…but know this, " +
-                                         "if you can see them, they can see you…If you’ve touched it, it’s too late, they know you’re here…",
+                                         "Touch at your own risk… When worn this amulet allows the wearer to see those on the ‘other side’… but know this, " +
+                                         "if you can see them, they can see you… If you’ve touched it, it’s too late, they know you’re here…",
                                          "You read the paper",
                                          "read",
-                                         "Folded up paper under the amulet...what could be on it?"));
+                                         "Folded up paper under the amulet... what could be on it?"));
             }
 
             //if direction in room1 equals 0, create all the directions
@@ -1111,7 +1111,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room2north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room2south",
                                                false,
                                                "",
@@ -1130,7 +1130,7 @@ namespace HauntedHouse
             if (objectResult.Item2)
             {
                 var direction = roomDirection.Find(x => x.Item1 == "Room2west"); //finding the tuple
-                roomDirection.Add(Tuple.Create(direction.Item1, true, direction.Item3, direction.Item4)); //creating a new tuple that allows to go through the door
+                roomDirection.Add(Tuple.Create(direction.Item1, true, direction.Item3, direction.Item4)); //creating a new tuple that allows player to go through the door
                 roomDirection.Remove(direction); //removing the old tuple
             }
 
@@ -1165,7 +1165,7 @@ namespace HauntedHouse
             {
                 objects.Add(Tuple.Create("Room3rats", //Name of object
                                          false,        //State of the object
-                                         "You attempt to grab one, and recieve a nast bite for your efforts", //text when first activate
+                                         "You attempt to grab one, and receive a nasty bite for your efforts", //text when first activate
                                          "That ended badly last time", //text when activating the second time.
                                          "", //What verb need to use it, (Might be able to have multiple uses, i.e. "open, move")  
                                          "The rats look diseased and sickly"));      //text describing what it is when the "player" looks at it  
@@ -1187,7 +1187,7 @@ namespace HauntedHouse
                                                false,        //is the player able to go this way   
                                                "SOMETHING OBSCURE",           //the name of the method it will go           
                                                "You peek inside. Nothing but broken furniture and rats, a large dark stain in the " +
-                                               "center. Something awful happened in this room. You can feel it, you back out immediately."));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               "center. Something awful happened in this room. You can feel it, you back out immediately."));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room3south",
                                                true,
                                                "Room2",
@@ -1230,7 +1230,7 @@ namespace HauntedHouse
                                          "You move the coat aside to reveal a hidden door.",
                                          "You return the coat to the rack",
                                          "move", //should be move
-                                         "The coats is old and worn. They smell of age and decay. Strangely you feel a slight breeze as you near it."));
+                                         "The coat is old and worn. It smells of age and decay. Strangely you feel a slight breeze as you near it."));
             }
 
             //Object status checks
@@ -1276,7 +1276,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room4north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room4south",
                                                true,
                                                "Room3",
@@ -1323,7 +1323,7 @@ namespace HauntedHouse
                                          "Please refrain from mutilating the local fauna.",
                                          "open",
                                          "The rats crawl over the bench and tables. " +
-                                         "They seem unconcerned by your prescence."));
+                                         "They seem unconcerned by your presence."));
             }
 
 
@@ -1333,7 +1333,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room5north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room5south",
                                                false,
                                                "",
@@ -1378,7 +1378,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room6north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room6south",
                                                false,
                                                "",
@@ -1397,7 +1397,7 @@ namespace HauntedHouse
             {
                 text = "A couch and two chairs surround a mahogany table with intricately " +
                     "carved with legs displaying flowers and vines. This lounge set would fetch " +
-                    "thousands in an antique’s auction, if only it had been properly stored. Mold " +
+                    "thousands in an antiques auction, if only it had been properly stored. Mold " +
                     "has eaten into what once must have been plush red velvet. On the coffee table " +
                     "lies a candle holder with a fresh candle. No other rooms lead off this room.";
                 ShowMessage();
@@ -1418,7 +1418,7 @@ namespace HauntedHouse
                                          "You may now descend the stairs aided by your trusty everlasting candle.", //text when first activate
                                          "You can safely descend the stairs.", //text when activating the second time.
                                          "candle", //What verb need to use it, (Might be able to have multiple uses, i.e. "open, move")  
-                                         "The stairwell is pitch black. To descent could be dangerous."));      //text describing what it is when the "player" looks at it  
+                                         "The stairwell is pitch black. The descent could be dangerous."));      //text describing what it is when the "player" looks at it  
             }
 
             //Directions
@@ -1427,7 +1427,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room7north", //what room this is and what direction
                                                true,        //is the player able to go this way   
                                                "Room99",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room7south",
                                                true,
                                                "Room4",
@@ -1474,7 +1474,7 @@ namespace HauntedHouse
                                          "", //text when first activate
                                          "dolls activated", //text when activating the second time.
                                          "", //What verb need to use it, (Might be able to have multiple uses, i.e. "open, move")  
-                                         "You move towards the dolls, as you take your second step, one slips of the pile and crashes to the floor, further shattering it’s already damaged face, you look back at the pile and you swear that some of expressions changed… You back away slowly"));      //text describing what it is when the "player" looks at it  
+                                         "You move towards the dolls, as you take your second step, one slips off the pile and crashes to the floor, further shattering its already damaged face, you look back at the pile and you swear that some of the dolls' expressions changed… You back away slowly"));      //text describing what it is when the "player" looks at it  
             }
             if (!objects.Any(c => c.Item1.Contains("Room8trapdoor")))
             {
@@ -1510,7 +1510,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room8north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room8south",
                                                true,
                                                "Room7",
@@ -1569,7 +1569,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room9north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room9south",
                                                false,
                                                "",
@@ -1603,7 +1603,7 @@ namespace HauntedHouse
                 roomDirection.Add(Tuple.Create("Room10north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room10south",
                                                false,
                                                "",
@@ -1634,13 +1634,13 @@ namespace HauntedHouse
         public static void Room11()
         {
 
-            //if direction in room1 equals 0, create all the directions
+            //if direction in Room11 equals 0, create all the directions
             if (roomDirection.Count(c => c.Item1.Contains("Room11")) == 0)
             {
                 roomDirection.Add(Tuple.Create("Room11north", //what room this is and what direction
                                                false,        //is the player able to go this way   
                                                "",           //the name of the method it will go           
-                                               ""));         //The reason they cant go this way, leave as blank if u cant go this way at all
+                                               ""));         //The reason they can't go this way, leave as blank if you can't go this way at all
                 roomDirection.Add(Tuple.Create("Room11south",
                                                false,
                                                "",
@@ -1751,14 +1751,14 @@ namespace HauntedHouse
             EditEndingText();
 
             text = "That night he returned. " +
-                "With a knife taken from the kitchen he bounded up the stairs to my parent’s bedroom and brutally murdered them. " +
+                "With a knife taken from the kitchen he bounded up the stairs to my parents bedroom and brutally murdered them. " +
                 "Next, he entered my room, bound my wrists, stabbed me once in the stomach and dragged me down the stairs. " +
                 "Even the maids in the drawing room were not spared as they were found hiding from the commotion behind the couch. ";
 
             EditEndingText();
 
             text = "I was dragged down more stairs to the basement. " +
-                "He snatched the locket from my neck and threw me down the old well in which the house had been built over. " +
+                "He snatched the locket from my neck and threw me down the old well which the house had been built over. " +
                 "He locked me inside. There I splashed and screamed until the loss of blood finally drained away my life force. " +
                 "Here I have waited for someone to find me. ";
 

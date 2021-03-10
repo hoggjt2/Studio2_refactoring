@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "pJXmamaTczIGNyZ/J7amq8aXZNnxz3pweo+1PMZ6+a3I8RAv+i+dfOwJ0xeWpMX72cJwybzE6wsUQesWE0MERw==",
+  "success": true,
+  "projectFilePath": "H:\\Studio 2\\hh-project\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rosea5\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\rosea5\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\rosea5\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\rosea5\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
