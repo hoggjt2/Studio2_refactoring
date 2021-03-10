@@ -265,7 +265,7 @@ namespace HauntedHouse
                 Random random = new Random();
                 //This replaces the switch statement
                 string[] randRoomNames = {"???", "??!!?", "??!!?", "lost?", "Help me!!!" };
-                roomName = randRoomNames[random.Next(4)];
+                roomName = randRoomNames[random.Next(5)];
             }
             else
             {
