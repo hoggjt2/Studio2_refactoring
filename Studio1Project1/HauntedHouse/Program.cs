@@ -1685,54 +1685,44 @@ namespace HauntedHouse
 
         public static void Ending()
         {
-            text = "“My name is Rose Abigail Black; thank you for finding me. " +
+            EditEndingText("“My name is Rose Abigail Black; thank you for finding me. " +
                 "I have waited so long. " +
                 "Almost 200 years ago this was my home, I was happy… " +
                 "My father said it was time I was married and that he had arranged for it to be so with the " +
                 "son of another affluent family in town. " +
-                "His name was Henry H. Holmes, he was so handsome. I was thrilled with the match… ";
+                "His name was Henry H. Holmes, he was so handsome. I was thrilled with the match… ");
 
-            EditEndingText();
-
-            text = "Then it all started to go wrong, " +
+            EditEndingText("Then it all started to go wrong, " +
                 "behind his keen intellect and charming personality lay the soul of a monster. " +
                 "He treated me most violently, " +
                 "I was desperate to get away before the marriage took place and before being taken from my home and left in his care. " +
                 "I went to my father, I showed him the marks left upon my pale skin from his latest attentions. " +
                 "At once, my father called him to the house and declared that the marriage would no longer take place. " +
                 "Henry was furious, he stormed from the house. " +
-                "I breathed a sigh of relief, believing myself finally safe. ";
+                "I breathed a sigh of relief, believing myself finally safe. ");
 
-            EditEndingText();
-
-            text = "That night he returned. " +
+            EditEndingText("That night he returned. " +
                 "With a knife taken from the kitchen he bounded up the stairs to my parent’s bedroom and brutally murdered them. " +
                 "Next, he entered my room, bound my wrists, stabbed me once in the stomach and dragged me down the stairs. " +
-                "Even the maids in the drawing room were not spared as they were found hiding from the commotion behind the couch. ";
+                "Even the maids in the drawing room were not spared as they were found hiding from the commotion behind the couch. ");
 
-            EditEndingText();
-
-            text = "I was dragged down more stairs to the basement. " +
+            EditEndingText("I was dragged down more stairs to the basement. " +
                 "He snatched the locket from my neck and threw me down the old well in which the house had been built over. " +
                 "He locked me inside. There I splashed and screamed until the loss of blood finally drained away my life force. " +
-                "Here I have waited for someone to find me. ";
+                "Here I have waited for someone to find me. ");
 
-            EditEndingText();
-
-            text = "Henry haunts the upper levels of this house, his soul not pure enough to pass on, " +
+            EditEndingText("Henry haunts the upper levels of this house, his soul not pure enough to pass on, " +
                 "his only joy is knowing I am trapped here with him. " +
                 "I have waited for someone to hear my story and return to me my most precious possession, " +
                 "the amulet given to me at birth by my father, he said it would protect me. " +
-                "Only by wearing it again can I leave this place.";
-
-            EditEndingText();
+                "Only by wearing it again can I leave this place.");
 
             ShowEnding();
             menu = true;
         }
 
 
-        public static void EditEndingText()
+        public static void EditEndingText(string text)
         {
             int maxWidth = Console.WindowWidth; //the maximum width allowed
             string[] texts = text.Split(" "); //split the string into each word
