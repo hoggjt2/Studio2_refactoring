@@ -35,6 +35,8 @@ namespace HauntedHouse
         private const int MAXIMIZE = 3;
         private const int MINIMIZE = 6;
         private const int RESTORE = 9;
+        private const int QUARTERCONSOLE = 4;
+        private const int HALF = 2;
 
 
         //Constants
@@ -248,10 +250,10 @@ namespace HauntedHouse
 
         static public void DisplayUI()
         {
-            int quarterWidth = Console.WindowWidth / 4; // 1/4 of the console width
+            int quarterWidth = Console.WindowWidth / QUARTERCONSOLE; // 1/4 of the console width
             int width75 = Console.WindowWidth - quarterWidth; // 75% of the console width
             string temp = "Inventory";
-            int middleInv = (width75 + ((quarterWidth / 2) - (temp.Length) / 2)); //the middle where to put the word in the center of the area
+            int middleInv = (width75 + ((quarterWidth / HALF) - (temp.Length) / HALF)); //the middle where to put the word in the center of the area
             string hr = ""; //to make the horizontal ruler across the screen
 
             //set the cursor at the top left
