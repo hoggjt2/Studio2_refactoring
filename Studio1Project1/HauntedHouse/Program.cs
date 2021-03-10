@@ -35,6 +35,9 @@ namespace HauntedHouse
         private const int MAXIMIZE = 3;
         private const int MINIMIZE = 6;
         private const int RESTORE = 9;
+        private const int ANIDELAY = 500;
+        private const int MAZECOUNT5 = 5;
+        private const int UNKNOWNTUNNEL = 12;
 
 
         //Constants
@@ -69,7 +72,7 @@ namespace HauntedHouse
             Stairs,
             Basement,
             Tunnel,
-            Unknown = 12
+            Unknown = UNKNOWNTUNNEL
         }
 
         //Main method
@@ -94,7 +97,7 @@ namespace HauntedHouse
             menu = true;  //checks if the player is in the menu
             endingTexts = new List<string>();
             bool exit = false; //bool to get out of the loop
-            Animation(500, "Intro.txt");
+            Animation(ANIDELAY, "Intro.txt");
             do
             {
                 Console.Clear();
@@ -107,7 +110,7 @@ namespace HauntedHouse
                     else
                     {
                         DisplayUI();
-                        if (maze.Count == 5)
+                        if (maze.Count == MAZECOUNT5)
                         {
                             MazeChecker();
                             DisplayUI();
