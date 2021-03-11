@@ -266,32 +266,9 @@ namespace HauntedHouse
             if ((roomNumber == 10) || (roomNumber == 11))
             {
                 Random random = new Random();
-                switch (random.Next(4))
-                {
-                    case 1:
-                        {
-                            roomName = "???";
-                        }
-                        break;
-
-                    case 2:
-                        {
-                            roomName = "??!!?";
-                        }
-                        break;
-
-                    case 3:
-                        {
-                            roomName = "lost?";
-                        }
-                        break;
-
-                    default:
-                        {
-                            roomName = "Help me!!!";
-                        }
-                        break;
-                }
+                //This replaces the switch statement
+                string[] randRoomNames = {"???", "??!!?", "??!!?", "lost?", "Help me!!!" };
+                roomName = randRoomNames[random.Next(5)];
             }
             else
             {
