@@ -76,7 +76,7 @@ namespace HauntedHouse
         }
 
         //Main method
-        static void Main(string[] args)
+        static void Main()
         {
             //Set the app to fullScreen
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
@@ -232,7 +232,7 @@ namespace HauntedHouse
                             }
                         }
                         break;
-
+                    case "?":
                     case "help": //help command
                         {
                             Help(playerTexts);
