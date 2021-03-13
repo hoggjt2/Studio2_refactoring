@@ -38,6 +38,11 @@ namespace HauntedHouse
         private const int ANIDELAY = 500;
         private const int MAZECOUNT5 = 5;
         private const int UNKNOWNTUNNEL = 12;
+        private const int LOWERSCOREBY5 = 5;
+        private const int INCREASESCOREBY10 = 10;
+        private const int INCREASESCOREBY20 = 20;
+
+
 
 
         //Constants
@@ -581,7 +586,7 @@ namespace HauntedHouse
                         //if they are allowed to go through
                         if (direction.Item2)
                         {
-                            score -= 5;
+                            score -= LOWERSCOREBY5;
                             //change the player lcoation to the new location
                             playerLocation = direction.Item3;
                         }
@@ -632,7 +637,7 @@ namespace HauntedHouse
                                     //if the object is not activated
                                     if (!objectResult.Item2)
                                     {
-                                        score += 20;
+                                        score += INCREASESCOREBY20;
                                         //show the message of success and create the list to change the status from false to true;
                                         ShowMessage(objectResult.Item3);
                                         objects.Add(Tuple.Create(objectResult.Item1, true, objectResult.Item3, objectResult.Item4, objectResult.Item5, objectResult.Item6));
@@ -691,7 +696,7 @@ namespace HauntedHouse
                         if (!objectResult.Item2)
                         {
                             //tell the player the success message and change the status from false to true
-                            score += 10;
+                            score += INCREASESCOREBY10;
                             ShowMessage(objectResult.Item3);
                             objects.Add(Tuple.Create(objectResult.Item1, true, objectResult.Item3, objectResult.Item4, objectResult.Item5, objectResult.Item6));
                             objects.Remove(objectResult);

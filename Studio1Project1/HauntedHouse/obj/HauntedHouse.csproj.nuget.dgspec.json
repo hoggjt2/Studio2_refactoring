@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\robinja4\\OneDrive - Otago Polytechnic\\Y1S2\\Studio 2\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj": {}
+    "C:\\Users\\Jamie Robinson\\Desktop\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robinja4\\OneDrive - Otago Polytechnic\\Y1S2\\Studio 2\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj": {
+    "C:\\Users\\Jamie Robinson\\Desktop\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robinja4\\OneDrive - Otago Polytechnic\\Y1S2\\Studio 2\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
+        "projectUniqueName": "C:\\Users\\Jamie Robinson\\Desktop\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
         "projectName": "HauntedHouse",
-        "projectPath": "C:\\Users\\robinja4\\OneDrive - Otago Polytechnic\\Y1S2\\Studio 2\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
-        "packagesPath": "C:\\Users\\robinja4\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robinja4\\OneDrive - Otago Polytechnic\\Y1S2\\Studio 2\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\obj\\",
+        "projectPath": "C:\\Users\\Jamie Robinson\\Desktop\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
+        "packagesPath": "C:\\Users\\Jamie Robinson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jamie Robinson\\Desktop\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\robinja4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jamie Robinson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "System.Windows.Extensions": {
               "target": "Package",
@@ -60,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
