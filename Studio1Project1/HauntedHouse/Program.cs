@@ -1612,15 +1612,19 @@ namespace HauntedHouse
             maze.Add("E");
         }
 
+        //Checks if the player has the correct answer to the maze puzzle
         public static void MazeChecker()
         {
+            //clears the string
             string wordCheck = "";
 
+            //adds each char from the list into the string
             foreach (string word in maze)
             {
                 wordCheck += word;
             }
 
+            //if the word matches the answer, go to the ending, otherwise start from the tunnel entrance
             if (wordCheck == MAZEANSWER)
             {
                 playerLocation = "Room12";
@@ -1629,6 +1633,8 @@ namespace HauntedHouse
             {
                 playerLocation = "Room9";
             }
+
+            //clears the maze list
             maze.Clear();
         }
 
