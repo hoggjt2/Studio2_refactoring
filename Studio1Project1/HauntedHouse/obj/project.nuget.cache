@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "I7vlVYkgHTogmh0fA08lHDkmZjaK6qg7bEVxDN5Fl0qHI83kCmtwxLq6ByC0jTlIUkeY0bAo5DPYhkZwNLEXMw==",
+  "dgSpecHash": "iAGhAuWmq5zIfuGVUh4ZINpZGtUs3l+zy9b2oj7wWFVn/yh5PM0lNwFJ4o+RTG7Z3SkJlSF0Xza8W5/RLJL3Ew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jamie Robinson\\Desktop\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
+  "projectFilePath": "C:\\Users\\hoggjt2\\Desktop\\New folder\\Studio2_refactoring\\Studio1Project1\\HauntedHouse\\HauntedHouse.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jamie Robinson\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\Jamie Robinson\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Jamie Robinson\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
-    "C:\\Users\\Jamie Robinson\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\hoggjt2\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\hoggjt2\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\hoggjt2\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\hoggjt2\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

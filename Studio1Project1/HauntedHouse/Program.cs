@@ -31,10 +31,7 @@ namespace HauntedHouse
         private static IntPtr ThisConsole = GetConsoleWindow();
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-        private const int HIDE = 0;
         private const int MAXIMIZE = 3;
-        private const int MINIMIZE = 6;
-        private const int RESTORE = 9;
 
         private const int QUARTERCONSOLE = 4;
         private const int HALF = 2;
@@ -59,8 +56,7 @@ namespace HauntedHouse
         private static List<Tuple<string, int, string>> inventory; //Player's inventory
         private static List<Tuple<string, bool, string, string>> roomDirection; //direction which is allowed in each room
         private static List<string> screenSave;  //saves what is currently on the screen
-        private static List<bool> roomDescription; //checks whether to describe the room or not
-        private static string text;              //use this to show a message for the player
+        private static List<bool> roomDescription; //checks whether to describe the room or noter
         private static int score;                //keeps a track of the player's score 
         private static bool gameStart;           //checks to see if the game has started or not
         private static bool menu;                //checks to see if the game is in the menu
@@ -276,7 +272,6 @@ namespace HauntedHouse
             if ((roomNumber == 10) || (roomNumber == 11))
             {
                 Random random = new Random();
-                //This replaces the switch statement
                 string[] randRoomNames = {"???", "??!!?", "??!!?", "lost?", "Help me!!!" };
                 roomName = randRoomNames[random.Next(5)];
             }
