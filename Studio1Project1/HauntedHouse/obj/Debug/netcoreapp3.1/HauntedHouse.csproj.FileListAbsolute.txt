@@ -1,0 +1,46 @@
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.exe
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.deps.json
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.runtimeconfig.json
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.runtimeconfig.dev.json
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.pdb
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csprojAssemblyReference.cache
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.Properties.Resources.resources
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csproj.GenerateResource.cache
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.AssemblyInfoInputs.cache
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.AssemblyInfo.cs
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csproj.CoreCompileInputs.cache
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csproj.CopyComplete
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.dll
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.pdb
+C:\Users\robinja4\OneDrive - Otago Polytechnic\Y1S2\Studio 2\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.genruntimeconfig.cache
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.pdb
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.exe
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.deps.json
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.runtimeconfig.json
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.runtimeconfig.dev.json
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\HauntedHouse.pdb
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csprojAssemblyReference.cache
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.Properties.Resources.resources
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csproj.GenerateResource.cache
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.AssemblyInfoInputs.cache
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.AssemblyInfo.cs
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csproj.CoreCompileInputs.cache
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.csproj.CopyComplete
+C:\Users\Jamie Robinson\Desktop\Studio2_refactoring\Studio1Project1\HauntedHouse\obj\Debug\netcoreapp3.1\HauntedHouse.genruntimeconfig.cache

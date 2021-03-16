@@ -35,8 +35,19 @@ namespace HauntedHouse
         private const int MAXIMIZE = 3;
         private const int MINIMIZE = 6;
         private const int RESTORE = 9;
+
         private const int QUARTERCONSOLE = 4;
         private const int HALF = 2;
+
+        private const int ANIDELAY = 500;
+        private const int MAZECOUNT5 = 5;
+        private const int UNKNOWNTUNNEL = 12;
+        private const int LOWERSCOREBY5 = 5;
+        private const int INCREASESCOREBY10 = 10;
+        private const int INCREASESCOREBY20 = 20;
+
+
+
 
 
         //Constants
@@ -71,11 +82,11 @@ namespace HauntedHouse
             Stairs,
             Basement,
             Tunnel,
-            Unknown = 12
+            Unknown = UNKNOWNTUNNEL
         }
 
         //Main method
-        static void Main(string[] args)
+        static void Main()
         {
             //Set the app to fullScreen
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
@@ -96,7 +107,7 @@ namespace HauntedHouse
             menu = true;  //checks if the player is in the menu
             endingTexts = new List<string>();
             bool exit = false; //bool to get out of the loop
-            Animation(500, "Intro.txt");
+            Animation(ANIDELAY, "Intro.txt");
             do
             {
                 Console.Clear();
@@ -109,7 +120,7 @@ namespace HauntedHouse
                     else
                     {
                         DisplayUI();
-                        if (maze.Count == 5)
+                        if (maze.Count == MAZECOUNT5)
                         {
                             MazeChecker();
                             DisplayUI();
@@ -231,7 +242,7 @@ namespace HauntedHouse
                             }
                         }
                         break;
-
+                    case "?":
                     case "help": //help command
                         {
                             Help(playerTexts);
@@ -265,32 +276,9 @@ namespace HauntedHouse
             if ((roomNumber == 10) || (roomNumber == 11))
             {
                 Random random = new Random();
-                switch (random.Next(4))
-                {
-                    case 1:
-                        {
-                            roomName = "???";
-                        }
-                        break;
-
-                    case 2:
-                        {
-                            roomName = "??!!?";
-                        }
-                        break;
-
-                    case 3:
-                        {
-                            roomName = "lost?";
-                        }
-                        break;
-
-                    default:
-                        {
-                            roomName = "Help me!!!";
-                        }
-                        break;
-                }
+                //This replaces the switch statement
+                string[] randRoomNames = {"???", "??!!?", "??!!?", "lost?", "Help me!!!" };
+                roomName = randRoomNames[random.Next(5)];
             }
             else
             {
@@ -603,7 +591,7 @@ namespace HauntedHouse
                         //if they are allowed to go through
                         if (direction.Item2)
                         {
-                            score -= 5;
+                            score -= LOWERSCOREBY5;
                             //change the player lcoation to the new location
                             playerLocation = direction.Item3;
                         }
@@ -654,7 +642,7 @@ namespace HauntedHouse
                                     //if the object is not activated
                                     if (!objectResult.Item2)
                                     {
-                                        score += 20;
+                                        score += INCREASESCOREBY20;
                                         //show the message of success and create the list to change the status from false to true;
                                         ShowMessage(objectResult.Item3);
                                         objects.Add(Tuple.Create(objectResult.Item1, true, objectResult.Item3, objectResult.Item4, objectResult.Item5, objectResult.Item6));
@@ -713,7 +701,7 @@ namespace HauntedHouse
                         if (!objectResult.Item2)
                         {
                             //tell the player the success message and change the status from false to true
-                            score += 10;
+                            score += INCREASESCOREBY10;
                             ShowMessage(objectResult.Item3);
                             objects.Add(Tuple.Create(objectResult.Item1, true, objectResult.Item3, objectResult.Item4, objectResult.Item5, objectResult.Item6));
                             objects.Remove(objectResult);
